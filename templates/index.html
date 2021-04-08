@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="margin-top: 20px;">Operating System Scheduling Algorithms</h1>
+        <div class='container'>
+            <button class="algo a1" style="margin:50px;" onclick="showprocess()">FCFS</button>
+            <button class="algo a2" style="margin:10px;" onclick="sf()">SJF</button>
+            <button class="algo a3" style="margin:10px;" onclick="rr()">RR</button>
+            <div class="fcfs" id="fcfs"></div>
+        </div>
+    </center>
+    <br><br>
+</body>
+</html>
